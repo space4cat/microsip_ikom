@@ -149,6 +149,8 @@ if ($settingsStart -ge 0) {
 $newText = ($result -join "`r`n") + "`r`n"
 [System.IO.File]::WriteAllText($portableIni, $newText, $encoding)
 Write-Host '[OK] microsip.ini patched: attentionNumbersUrl + attentionNumbersRefresh added, all accounts and settings preserved.'
+Write-Host '[!] Note: account passwords may not decrypt (encryption key differs between builds).' -ForegroundColor Yellow
+Write-Host '    If a password is missing, re-enter it in account settings.' -ForegroundColor Yellow
 
 # --- 3. Copy sound files (.wav) from the installed MicroSIP ---
 $soundDirs = @()
