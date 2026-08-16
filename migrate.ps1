@@ -11,9 +11,46 @@ Write-Host '== MicroSIP portable: migrate settings =='
 Write-Host ("Target folder: " + $root)
 
 # --- 1. Locate installed MicroSIP.ini ---
+# Possible locations (MicroSIP settings.cpp Init):
+#   - installer mode: %APPDATA%\MicroSIP\MicroSIP.ini
+#   - legacy:         %LOCALAPPDATA%\MicroSIP\MicroSIP.ini (moved to Roaming on run)
+#   - portable:       MicroSIP.ini next to the exe (any folder)
+#   - install dir:    registry HKCU\Software\MicroSIP / HKLM\Software\MicroSIP (default value)
 $iniCandidates = @()
-if ($env:APPDATA) { $iniCandidates += (Join-Path $env:APPDATA 'MicroSIP\MicroSIP.ini') }
-if ($env:LOCALAPPDATA) { $iniCandidates += (Join-Path $env:LOCALAPPDATA 'MicroSIP\MicroSIP.ini') }
+
+if ($env:APPDATA) {
+    $iniCandidates += (Join-Path $env:APPDATA 'MicroSIP\MicroSIP.ini')
+}
+if ($env:LOCALAPPDATA) {
+    $iniCandidates += (Join-Path $env:LOCALAPPDATA 'MicroSIP\MicroSIP.ini')
+}
+
+# install dir from registry (default value of the key)
+foreach ($hive in 'HKCU:\Software\MicroSIP', 'HKLM:\Software\MicroSIP') {
+    if (Test-Path -LiteralPath $hive) {
+        $installPath = (Get-ItemProperty -LiteralPath $hive -ErrorAction SilentlyContinue).'(default)'
+        if ($installPath) {
+            $iniCandidates += (Join-Path $installPath 'MicroSIP.ini')
+        }
+    }
+}
+
+# common portable locations
+if ($env:USERPROFILE) {
+    $iniCandidates += (Join-Path $env:USERPROFILE 'Desktop\MicroSIP\microsip.ini')
+    $iniCandidates += (Join-Path $env:USERPROFILE 'Documents\MicroSIP\microsip.ini')
+}
+if ($env:ProgramFiles) { $iniCandidates += (Join-Path $env:ProgramFiles 'MicroSIP\MicroSIP.ini') }
+if (${env:ProgramFiles(x86)}) { $iniCandidates += (Join-Path ${env:ProgramFiles(x86)} 'MicroSIP\MicroSIP.ini') }
+
+# other user profiles (Vista and later)
+$profileRoot = if ($env:SystemDrive) { Join-Path $env:SystemDrive 'Users' } else { 'C:\Users' }
+if (Test-Path -LiteralPath $profileRoot) {
+    Get-ChildItem -LiteralPath $profileRoot -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+        $iniCandidates += (Join-Path $_.FullName 'AppData\Roaming\MicroSIP\MicroSIP.ini')
+        $iniCandidates += (Join-Path $_.FullName 'AppData\Local\MicroSIP\MicroSIP.ini')
+    }
+}
 
 $installedIni = $iniCandidates | Where-Object { $_ -and (Test-Path -LiteralPath $_) } | Select-Object -First 1
 
@@ -115,13 +152,19 @@ Write-Host '[OK] microsip.ini patched: attentionNumbersUrl + attentionNumbersRef
 
 # --- 3. Copy sound files (.wav) from the installed MicroSIP ---
 $soundDirs = @()
+if ($installedIni) {
+    $soundDirs += (Split-Path -Parent $installedIni)
+}
 if ($env:LOCALAPPDATA) { $soundDirs += (Join-Path $env:LOCALAPPDATA 'MicroSIP') }
 if ($env:ProgramFiles) { $soundDirs += (Join-Path $env:ProgramFiles 'MicroSIP') }
 if (${env:ProgramFiles(x86)}) { $soundDirs += (Join-Path ${env:ProgramFiles(x86)} 'MicroSIP') }
 if ($env:ProgramW6432) { $soundDirs += (Join-Path $env:ProgramW6432 'MicroSIP') }
 
 $copied = 0
+$seen = @{}
 foreach ($d in $soundDirs) {
+    if (-not $d -or $seen.ContainsKey($d.ToLowerInvariant())) { continue }
+    $seen[$d.ToLowerInvariant()] = $true
     if (Test-Path -LiteralPath $d) {
         $wavs = Get-ChildItem -LiteralPath $d -Filter *.wav -File -ErrorAction SilentlyContinue
         foreach ($w in $wavs) {
