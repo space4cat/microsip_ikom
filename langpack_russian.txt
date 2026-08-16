@@ -1,0 +1,629 @@
+﻿Language Pack
+Last-Modified-Using: http://www.microsip.org/translation
+Language: Russian
+Locale: 0x419
+RTL: 0
+
+; utf8
+
+[Call]
+Вызов
+[End Call]
+Завершить
+[Contacts]
+Контакты
+[Account]
+Аккаунт
+[Settings]
+Общие настройки
+[Visit Website]
+Cайт программы
+[Exit]
+Выход
+[Browse...]
+Обзор...
+[Default]
+По умолчанию
+[Auto Answer]
+Автоответ
+[Disable Local Account]
+Отключить локальный аккаунт
+[OK]
+ОК
+[Save]
+Сохранить
+[Cancel]
+Отмена
+[SIP Server]
+SIP-сервер
+[SIP Proxy]
+SIP-прокси
+[Domain]
+Домен
+[Password]
+Пароль
+[Connecting...]
+Подключение...
+[Online]
+На линии
+[Local]
+Локальный
+[Message]
+Сообщение
+[Edit]
+Изменить
+[Delete]
+Удалить
+[Add]
+Добавить
+[Bad Gateway]
+Сервер не найден
+[Request Timeout]
+Тайм-аут запроса
+[Number]
+Номер
+[Name]
+Имя
+[Contact]
+Контакт
+[Incoming Call]
+Входящий вызов
+[Answer]
+Ответить
+[Decline]
+Отклонить
+[Calling]
+Исходящий вызов
+[Connecting]
+Соединение
+[Connected]
+Подключен
+[Auto]
+Авто
+[Transport]
+Транспорт
+[Incorrect Password]
+Неверный пароль
+[Public Address]
+Публичный адрес
+[Media Encryption]
+Шифрование медиа
+[Disabled]
+Отключено
+[Optional]
+Необязательно
+[Mandatory]
+Обязательно
+[STUN Server]
+STUN-сервер
+[Presence Subscription]
+Подписка на статус
+[Ringing]
+Идет вызов
+[Call Ended]
+Завершено
+[Declined]
+Отклонено
+[No address found]
+Адрес не найден
+[Request Terminated]
+Запрос отменен
+[Away]
+Отошел
+[Publish Presence]
+Публиковать статус
+[Session Progress]
+Прогресс...
+[Camera]
+Камера
+[Video Call]
+Видеовызов
+[Answer with Video]
+Принять с видео
+[View Log File]
+Журнал событий
+[Microphone]
+Микрофон
+[Speaker]
+Динамики
+[Video Codec]
+Видеокодек
+[Check for Updates]
+Проверять обновления
+[Daily]
+Раз в день
+[Weekly]
+Раз в неделю
+[Monthly]
+Раз в месяц
+[Quarterly]
+Раз в квартал
+[Never]
+Никогда
+[Update Available]
+Доступно обновление
+[Invalid Number]
+Неправильный номер
+[Offline]
+Не в сети
+[Single Call Mode]
+Режим одиночного вызова
+[Local Video]
+Локальное видео
+[Call Transfer]
+Перевод звонка
+[final]
+последний
+[Call transfered successfully, disconnecting call]
+Перевод выполнен, отключение
+[Hold]
+Удержание
+[Transfer]
+Перевод
+[Sound Events]
+Звуковые события
+[Bitrate]
+Битрейт
+[Login]
+Логин
+[Enable Log File]
+Журнал событий
+[Duration]
+Длительность
+[Information]
+Информация
+[display password]
+показать пароль
+[From]
+От
+[To]
+Кому
+[Ring Device]
+Устройство для вызова
+[Service Unavailable]
+Сервис недоступен
+[Busy Here]
+Занято
+[Trying]
+Попытка
+[Method Not Allowed]
+Не разрешено
+[Not Found]
+Не найдено
+[Always on Top]
+Всегда сверху
+[Connect]
+Подключиться
+[Last Call]
+Последний
+[Close All]
+Закрыть все
+[Copy]
+Копировать
+[Select All]
+Выбрать все
+[Display Name]
+Отображаемое имя
+[Remember Details]
+Запомнить пароль
+[No]
+Нет
+[All Calls]
+Все вызовы
+[SIP Header]
+SIP-заголовок
+[Different User]
+Другой пользователь
+[Different Domain]
+Другой домен
+[Different User or Domain]
+Другой пользователь или домен
+[Different Remote Domain]
+Другой удаленный домен
+[Deny Incoming]
+Автоотклонение
+[Allow IP Rewrite]
+Использовать внешний IP-адрес
+[Directory of Users]
+Каталог пользователей
+[Call on Remote Hold]
+Встречное удержание
+[Call on Local Hold]
+Локальное удержание
+[Call on Hold]
+Вызов на удержании
+[Call is Active]
+Вызов активен
+[Force Codec for Incoming]
+Задавать кодек для входящих
+[Menu]
+Меню
+[Edit Account]
+Изменить аккаунт
+[Add Account...]
+Добавить аккаунт
+[Delete Account]
+Удалить аккаунт
+[Make Active]
+Сделать активным
+[Are you sure you want to remove?]
+Вы действительно хотите удалить?
+[Call Pickup]
+Перехват вызова
+[Speaker Level]
+Уровень динамиков
+[Microphone Level]
+Уровень микрофона
+[Mute Speaker]
+Выключить динамики
+[Mute Microphone]
+Выключить микрофон
+[Please fill out at least the required fields marked with *.]
+Пожалуйста, заполните все обязательные поля, отмеченные *.
+[Ask your SIP provider how to configure the account correctly.]
+Узнайте у вашего SIP-провайдера как правильно настроить аккаунт.
+[Time]
+Время
+[Phone]
+Набор
+[Ringtone]
+Мелодия вызова
+[Username]
+Имя пользователя
+[Do you want to update now?]
+Вы хотите обновить сейчас?
+[Available Codecs]
+Доступные кодеки
+[Enabled Codecs]
+Активные кодеки
+[Logs]
+Журналы
+[Random Popup Position]
+Случайная позиция окна
+[Attended Transfer]
+Условный перевод
+[Enable Local Account]
+Включить локальный аккаунт
+[Send Crash Report]
+Отправлять отчет об ошибке
+[Account Name]
+Имя аккаунта
+[Invite to Conference]
+Пригласить в конференцию
+[Merge]
+Объединить
+[Separate]
+Разделить
+[Disconnect]
+Завершить
+[DTMF Method]
+Передача DTMF
+[Voicemail Number]
+Голосовой ящик
+[Disable Session Timers]
+Отключить таймеры сессии
+[Microphone Amplification]
+Усиление микрофона
+[Software Level Adjustment]
+Программная регулировка микрофона
+[Shortcuts]
+Быстрые клавиши
+[Enable]
+Включить
+[Label]
+Название
+[Type]
+Тип
+[Bottom Position]
+Расположение внизу
+[You need to restart application for the changes to take effect.]
+Перезапустите приложение, чтобы изменения вступили в силу.
+[Handle Media Buttons]
+Поддержка медиа клавиш
+[Bring to Front on Incoming Call]
+Переместить на передний план при входящем звонке
+[Help]
+Справка
+[Video Bitrate]
+Битрейт видео
+[Control Button]
+Кнопка управления
+[Do Not Disturb]
+Не беспокоить
+[Source Port]
+Порт источника
+[RTP Ports]
+RTP-порты
+[Import]
+Импорт
+[Blind Transfer]
+Слепой перевод
+[Redial]
+Повторный вызов
+[Backspace]
+Удалить
+[Clear]
+Очистить
+[Use Space key to enable selected codec]
+Используйте Пробел, чтобы включить кодек
+[Use Delele key to disable selected codec]
+Используйте Delete, чтобы выключить кодек
+[Conference]
+Конференция
+[Dialing Prefix]
+Префикс вызова
+[Register Refresh]
+Перерегистрация
+[Keep-Alive]
+Проверка доступности
+[Ringtone Volume]
+Громкость вызова
+[Call Recording]
+Запись звонков
+[Nameserver]
+Сервер имен
+[Default List Action]
+Действие из списка
+[Edit Local Account]
+Редактировать локальный аккаунт
+[Export]
+Экспорт
+[Call Waiting]
+Ожидание вызова
+[Ready]
+Готов
+[Not online]
+Не в сети
+[On the phone]
+У телефона
+[First Name]
+Имя
+[Last Name]
+Фамилия
+[Phone Number]
+Рабочий
+[Mobile Number]
+Мобильный
+[E-mail Address]
+Электронная почта
+[Address]
+Адрес
+[City]
+Город
+[State]
+Регион
+[Postal Code]
+Индекс
+[Comment]
+Комментарий
+[close window to ignore call]
+закрыть окно, чтобы игнорировать звонок
+[Headset Support]
+Поддержка гарнитуры
+[sec]
+сек.
+[Call Forwarding]
+Переадресация
+[Are you sure you want to delete?]
+Вы уверены, что хотите удалить?
+[Delete Contact]
+Удалить контакт
+[Account or credentials not found.]
+Аккаунт или учетные данные не найдены.
+[Please fill out all required fields.]
+Пожалуйста, заполните все обязательные поля.
+[Dial Plan]
+План набора
+[Disable Video]
+Отключить видеовызовы
+[Disable Messaging]
+Отключить обмен сообщениями
+[Register]
+Зарегистрироваться
+[Unregister]
+Отменить регистрацию
+[Options]
+Опции
+[Delay]
+Задержка
+[Caller Number]
+Номер звонящего
+[Unable to find default audio device]
+Звуковое устройство не найдено
+[Network is unreachable]
+Сеть недоступна
+[Microphone access is blocked. Please check your antivirus settings or security software.]
+Разрешите доступ к микрофону в настройках антивируса.
+[Microphone access is turned off. Enable it in Windows Settings.]
+Разрешите использование микрофона в настройках Windows (Настройки Windows => Конфиденциальность => Микрофон).
+[Canceled]
+Отменено
+[Softphone is not initialized. Check your settings.]
+Программный телефон не инициализирован. Проверьте свои настройки.
+[Unable to initialize network sockets.]
+Невозможно инициализировать сетевые сокеты.
+[Unable to connect to the remote server.]
+Невозможно подключиться к удаленному серверу.
+[Starred]
+Избранное
+[Run at System Startup]
+Автозагрузка при старте системы
+[Run Batch]
+Запустить пакет
+[Call URL]
+URL вызова
+[Call All]
+Позвонить всем
+[Custom]
+Свое
+[Add Contact]
+Добавить контакт
+[Incorrect dialing or non-existent number.]
+Неверный набор или несуществующий номер
+[End]
+Завершить
+[Address Incomplete]
+Адрес не заполнен
+[Not acceptable here]
+Здесь неприемлемо
+[Idle]
+Свободен
+[Toggle]
+Переключить
+[Connection refused]
+В соединении отказано
+[Connection timed out]
+Время соединения истекло
+[Cannot get IP address of the called host]
+Невозможно получить IP-адрес вызываемого хоста
+[Answered Elsewhere]
+Ответил в другом месте
+[Missed Call]
+Пропущенный звонок
+[Do you want to delete user data and program settings? This action cannot be undone.]
+Хотите удалить пользовательские данные и настройки программы? Это действие не может быть отменено.
+[Unavailable]
+Недоступен
+[Call Limit]
+Лимит вызовов
+[Hide Caller ID]
+Анонимный вызов
+[Feature Codes]
+Коды функций
+[Connection Failed]
+Соединение не удалось
+[The server returned an error code:]
+Сервер вернул код ошибки:
+[The received data cannot be recognized]
+Полученные данные не могут быть распознаны
+[Multi Monitor Support]
+Поддержка нескольких мониторов
+[Handle IP changes]
+Обработка изменений IP
+[Are you sure you want to delete the selected items?]
+Вы уверены, что хотите удалить выбранные элементы?
+[Delete Call Log]
+Удалить журнал звонков
+[Accounts]
+Аккаунты
+[Selected Accounts]
+Выбранные аккаунты
+[Use Space key to add account]
+Используйте клавишу пробел для добавления аккаунта
+[Use Delele key to remove account]
+Используйте клавишу Delele для удаления аккаунта
+[Export Configuration]
+Экспорт конфигурации
+[Import Configuration]
+Импорт конфигурации
+[Export Call Log]
+Экспорт журнала звонков
+[Import Call Log]
+Импорт журнала звонков
+[Export Contacts]
+Экспорт контактов
+[Import Contacts]
+Импорт контактов
+[Export/Import]
+Экспорт/Импорт
+[Soft]
+Мягкий
+[Hard]
+Жесткий
+[Active Calls]
+Активные вызовы
+[You already have an active call with this number.]
+У вас уже есть активный вызов с этим номером.
+[Attended transfer is not available in single-call mode. Disable this mode or use PBX feature codes.]
+Функция автоматического перевода вызова недоступна в режиме одиночного вызова. Отключите этот режим или используйте коды функций АТС.
+[Transfer Call to]
+Выполнить перевод на
+[Disable name lookup in directory]
+Отключить поиск имени в каталоге
+[Unauthorized]
+Не авторизован
+[Merge All]
+Объединить все
+[Separate All]
+Разделить все
+[Auto Conference]
+Автоконференция
+[Updating to the latest version may resolve this issue.]
+Обновление до последней версии может решить эту проблему.
+[Open the download page now?]
+Открыть страницу загрузки сейчас?
+[The application may have been launched from an unsafe location. Please download the application from the official website.]
+Приложение могло быть запущено из небезопасного места. Пожалуйста, скачайте приложение с официального сайта.
+[See the Freezes or Crashes help section.]
+См. раздел справки «Зависания или сбои».
+[Open troubleshooting page?]
+Открыть страницу устранения неполадок?
+[Update now to stay secure and take advantage of the latest improvements.]
+Обновите сейчас, чтобы обеспечить безопасность и воспользоваться последними улучшениями.
+[Thanks for testing the beta!]
+Спасибо за тестирование бета-версии!
+[The final version is now available. Download it from our website.]
+Финальная версия теперь доступна. Скачайте её с нашего сайта.
+[Camera access is turned off.]
+Доступ к камере отключен.
+[A Lite version without video support is also available.]
+Также доступна облегченная версия без поддержки видео.
+[This application requires camera access for desktop apps to function properly.]
+Для корректной работы этому приложению необходим доступ к камере для настольных приложений.
+[Contact already exists]
+Контакт уже существует.
+[Microphone and speakers are required.]
+Необходимы микрофон и колонки.
+[No microphone or audio output device was detected. Please connect them to make calls.]
+Микрофон или устройство вывода звука не обнаружены. Пожалуйста, подключите их для совершения звонков.
+[Network connection is not available.]
+Сетевое соединение недоступно.
+[Please check that your firewall or antivirus is not blocking this application.]
+Пожалуйста, убедитесь, что ваш брандмауэр или антивирус не блокирует это приложение.
+[A contact with this phone number already exists. Do you want to replace it?]
+Контакт с этим номером телефона уже существует. Хотите его заменить?
+[Activate or add an account in the main menu of the softphone.]
+Активируйте или добавьте учетную запись в главном меню софтфона.
+[A newer version may be available]
+Возможно, доступна более новая версия.
+[Please visit our website to check for updates.]
+Пожалуйста, посетите наш веб-сайт, чтобы проверить наличие обновлений.
+[This version is outdated]
+Эта версия устарела.
+[This version is no longer supported]
+Данная версия больше не поддерживается.
+[Please visit our website to download the latest version.]
+Пожалуйста, посетите наш сайт, чтобы загрузить последнюю версию.
+[Try the Lite version or update your graphics and camera drivers.]
+Попробуйте облегченную версию или обновите драйверы видеокарты и камеры.
+[A critical error occurred in the video subsystem]
+В видеоподсистеме произошла критическая ошибка.
+[The application crashed]
+Приложение завершило работу с ошибкой.
+[Unable to create media session]
+Не удалось создать медиасессию.
+[Call failed:]
+Вызов не удался:
+[Unsupported codecs, encryption methods, or other media parameters.]
+Неподдерживаемые кодеки, методы шифрования или другие параметры мультимедиа.
+[Server error]
+Ошибка сервера
+[unencrypted]
+незашифрованный
+[This could be caused by driver issues, or other unexpected system problems.]
+Это может быть вызвано проблемами с драйверами или другими неожиданными системными неполадками.
+[A critical error occurred in the audio subsystem]
+В аудиоподсистеме произошла критическая ошибка.
+[A critical error occurred in the module on your PC]
+В модуле на вашем ПК произошла критическая ошибка.
+[Unable to send the network request.]
+Не удалось отправить сетевой запрос.
+[If you don't have your account details, contact your IP telephony provider to obtain them.]
+Если у вас нет данных вашей учетной записи, обратитесь к своему провайдеру IP-телефонии, чтобы их получить.
+[Phone:]
+Рабочий:
+[Mobile:]
+Мобильный:
+[Search]
+Поиск
+[]
