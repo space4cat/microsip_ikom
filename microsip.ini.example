@@ -1,0 +1,6 @@
+; MicroSIP portable configuration
+; Предустановлен URL контрольного списка номеров (обновляется автоматически).
+
+[Settings]
+attentionNumbersUrl=http://10.100.0.6/microsip_webmn/list.php?token=1cuHYWykcErRbmGvGzARzQwLbsRANdRYEbZ8qGiI9B7Nj0zRNlHJqe4vtMISVk9x
+attentionNumbersRefresh=60
